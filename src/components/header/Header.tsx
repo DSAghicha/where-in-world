@@ -1,10 +1,11 @@
+import './Header.scss'
 import React from 'react'
 import ThemeBtn from '../themeBtn/ThemeBtn'
 
 const Header: React.FC = () => {
 	return (
 		<header>
-			<div>Header</div>
+			<span id='title'>Where in the World?</span>
 			<ThemeBtn />
 		</header>
 	)
