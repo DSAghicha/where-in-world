@@ -1,0 +1,11 @@
+@use './_themes' as *;
+
+@mixin styles($mode) {
+	@each $key, $map in $themes {
+		@each $prop, $color in $map {
+			@if $prop == $mode {
+				--#{$key}: #{$color};
+			}
+		}
+	}
+}

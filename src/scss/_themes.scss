@@ -1,0 +1,12 @@
+@use './_var' as *;
+
+$themes: (
+	bgThemeColor: (
+		darkTheme: $color-primary-400,
+		lightTheme: $color-secondary-400
+	),
+	textThemeColor: (
+		darkTheme: $color-secondary-200,
+		lightTheme: $color-primary-800
+	)
+);

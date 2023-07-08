@@ -1,4 +1,5 @@
 @use './_var' as *;
+@use './mixin' as *;
 
 * {
 	margin: 0;
@@ -49,6 +50,14 @@ a:not([class]) {
 img {
 	max-width: 100%;
 	display: block;
+}
+
+.dark-mode {
+	@include styles('darkTheme');
+}
+
+.light-mode {
+	@include styles('lightTheme');
 }
 
 @media (prefers-reduced-motion: reduce) {
