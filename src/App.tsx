@@ -13,6 +13,6 @@ const App: React.FC = () => {
 			</section>
 		</>
 	)
-}
+
 
 export default App
